@@ -49,7 +49,9 @@ class Customer {
   
   meals() {
     return store.meals.filter(function(meal) {
-      return meal.deliveryId === this.deliveryId
+      if (meal.deliveryId === this.deliveryId) {
+        return meal.title
+      }
     })
   }
   
