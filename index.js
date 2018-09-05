@@ -48,7 +48,7 @@ class Customer {
   }
   
   meals() {
-    store.meals.map(function)
+    store.meals.map(function(meal))
   }
   
   totalSpent() {
