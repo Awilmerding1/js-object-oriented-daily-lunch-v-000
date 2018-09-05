@@ -54,7 +54,6 @@ class Customer {
     	   a.push(meal.title)
 	    }
   	}
-  	return a
   }
   
   totalSpent() {
