@@ -48,13 +48,7 @@ class Customer {
   }
   
   meals() {
-    let a = []
-    return store.meals.filter(meal => {
-      if (meal.deliveryId === this.deliveryId) {
-        a.push(meal.title)
-      }
-      return a
-    })
+    return this.deliveries()
   }
   
   totalSpent() {
