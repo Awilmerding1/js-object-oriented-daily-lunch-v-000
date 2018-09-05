@@ -54,7 +54,9 @@ class Customer {
   }
   
   totalSpent() {
-    return this.deliveries().reduce(function(agg, el, i, arr))
+    return this.deliveries().reduce(function(agg, el, i, arr) {
+      
+    })
 }
 
 
