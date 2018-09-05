@@ -49,7 +49,7 @@ class Customer {
   
   meals() {
     return this.deliveries().map(meal => {
-      
+      return meal.title
     })
   }
   
