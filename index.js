@@ -95,34 +95,34 @@ class Meal {
   }
 }
 
-let deliveryId = 0
+// let deliveryId = 0
 
-class Delivery {
+// class Delivery {
   
-  constructor(mealId, neighborhoodId, customerId) {
-    this.id = ++deliveryId
-    this.mealId = mealId
-    this.neighborhoodId = neighborhoodId
-    this.customerId = customerId
-    store.deliveries.push(this)
-  }
+//   constructor(mealId, neighborhoodId, customerId) {
+//     this.id = ++deliveryId
+//     this.mealId = mealId
+//     this.neighborhoodId = neighborhoodId
+//     this.customerId = customerId
+//     store.deliveries.push(this)
+//   }
   
-  meal() {
-    return store.meals.find(meal => {
-      return meal.id === this.mealId
-    })
-  }
+//   meal() {
+//     return store.meals.find(meal => {
+//       return meal.id === this.mealId
+//     })
+//   }
     
-  customer() {
-    return store.customers.find(customer => {
-      return customer.id === this.customerId
-    })
-  }
+//   customer() {
+//     return store.customers.find(customer => {
+//       return customer.id === this.customerId
+//     })
+//   }
   
-  neighborhood() {
-    return store.neighborhoods.find(neighborhood => {
-      return neighborhood.id === this.neighborhoodId
-    })
-  }
-}
+//   neighborhood() {
+//     return store.neighborhoods.find(neighborhood => {
+//       return neighborhood.id === this.neighborhoodId
+//     })
+//   }
+// }
 
