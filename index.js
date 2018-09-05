@@ -87,7 +87,7 @@ class Meal {
   }
   
   static byPrice() {
-    let prices = Meal.map(function(meal) {
+    let prices = store.meals.map(function(meal) {
       return meal.price
     })
     return prices.sort(function(price1, price2){
