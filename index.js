@@ -51,7 +51,6 @@ class Customer {
     let a = []
       if (meal.deliveryId === this.deliveryId) {
         return meal.title
-      }
     })
   }
   
