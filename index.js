@@ -49,7 +49,7 @@ class Customer {
   
   meals() {
     store.meals.map(function(meal) {
-      
+      return meal.name
     })
   }
   
