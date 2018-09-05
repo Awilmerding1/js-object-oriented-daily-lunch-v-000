@@ -54,7 +54,7 @@ class Customer {
   }
   
   totalSpent() {
-    return this.deliveries().reduce()
+    return this.deliveries().reduce(function())
 }
 
 
