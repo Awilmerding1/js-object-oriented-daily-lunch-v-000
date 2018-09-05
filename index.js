@@ -48,7 +48,7 @@ class Customer {
   }
   
   meals() {
-    return 
+    return deliveries.call()
   }
   
   totalSpent() {
