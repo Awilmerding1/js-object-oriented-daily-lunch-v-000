@@ -48,7 +48,7 @@ class Customer {
   }
   
   meals() {
-    return store.meals.filter(meal => {
+    return store.meals.map(meal => {
       if (meal.deliveryId === this.deliveryId) {
         return meal.title
       }
