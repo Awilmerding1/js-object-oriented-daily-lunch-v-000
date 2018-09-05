@@ -81,12 +81,9 @@ class Meal {
   }
   
   customers() {
-    let a = store.customers.filter(customer => {
+    return store.customers.filter(customer => {
       return customer.mealId === this.id
     })
-    return a.reduce(function(agg, el, i, arr) {
-      return [...agg, el.name]
-    }, [])
   }
   
   static byPrice() {
