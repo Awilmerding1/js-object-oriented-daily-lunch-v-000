@@ -53,8 +53,8 @@ class Customer {
     	if (meal.deliveryId === this.deliveryId) {
     	   a.push(meal.title)
 	    }
-	    return a
   	}
+  	return a
   }
   
   totalSpent() {
