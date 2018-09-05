@@ -48,11 +48,7 @@ class Customer {
   }
   
   meals() {
-    const a = []
-    if (meal.deliveryId === this.deliveryId) {
-    	  a.push(meal.title)
-	    }
-	   return a
+    
   }
   
   totalSpent() {
