@@ -48,8 +48,8 @@ class Customer {
   }
   
   meals() {
-    return store.meals.forEach(function(el, i, arr){
-      return el.title
+    return store.meals.filter(meal => {
+      return delivery.customerId === this.id
     })
       
   }
