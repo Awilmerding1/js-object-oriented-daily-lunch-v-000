@@ -90,7 +90,7 @@ class Meal {
     let prices = this.meals.map(function(meal) {
       return meal.price
     })
-    prices.sort(function(price1, price2){
+    return prices.sort(function(price1, price2){
       return price1 - price2
     })
   }
