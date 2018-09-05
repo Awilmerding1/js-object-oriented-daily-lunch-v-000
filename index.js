@@ -49,11 +49,10 @@ class Customer {
   
   meals() {
     const a = []
-    	while (meal.deliveryId === this.deliveryId) {
-    	   a.push(meal.title)
+    while (meal.deliveryId === this.deliveryId) {
+    	  a.push(meal.title)
 	    }
-	    return a
-  	}
+	   return a
   }
   
   totalSpent() {
