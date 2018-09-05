@@ -87,7 +87,7 @@ class Meal {
   }
   
   static byPrice() {
-    this.price.sort(function(price1, price2){
+    prices.sort(function(price1, price2){
       price1 - price2
     })
   }
