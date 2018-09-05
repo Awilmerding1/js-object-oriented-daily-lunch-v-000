@@ -54,10 +54,7 @@ class Customer {
   }
   
   totalSpent() {
-    return store.meals.reduce(function(agg, el, i, arr) {
-      return agg + el.price
-    }, 0)
-  }
+    return this.deliveries().reduce()
 }
 
 
