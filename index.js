@@ -47,14 +47,14 @@ class Customer {
     })
   }
   
-  // meals() {
-  // 	for (const meal of store.meals) {
-  // 	 let a = []
-  //   	while (meal.deliveryId === this.deliveryId) {
-  //   	   a.push(meal.title)
-	 //   }
-	 //   return a
-  // 	}
+  meals() {
+  	for (const meal of store.meals) {
+  	 let a = []
+    	while (meal.deliveryId === this.deliveryId) {
+    	   a.push(meal.title)
+	    }
+	    return a
+  	}
   }
   
   totalSpent() {
