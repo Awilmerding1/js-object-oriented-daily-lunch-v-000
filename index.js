@@ -48,8 +48,8 @@ class Customer {
   }
   
   meals() {
+    const a = []
   	for (const meal of store.meals) {
-  	 const a = []
     	if (meal.deliveryId === this.deliveryId) {
     	   a.push(meal.title)
 	    }
