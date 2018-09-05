@@ -48,7 +48,7 @@ class Customer {
   }
   
   meals() {
-    let
+    return store.meals.filter(meal => {
       if (meal.deliveryId === this.deliveryId) {
         return meal.title
       }
