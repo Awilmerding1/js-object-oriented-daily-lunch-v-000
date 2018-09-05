@@ -50,7 +50,9 @@ class Customer {
   meals() {
     let a = []
     return store.meals.filter(meal => {
-      return meal.deliveryId === this.deliveryId
+      if (meal.deliveryId === this.deliveryId) {
+        a.push(meal.title)
+      }
     })
   }
   
