@@ -87,7 +87,7 @@ class Meal {
   }
   
   static byPrice() {
-    s
+    this.
   }
 }
 
