@@ -48,7 +48,7 @@ class Customer {
   }
   
   meals() {
-    return store.meals.forEach
+    return store.meals.forEach(function())
       
   }
   
