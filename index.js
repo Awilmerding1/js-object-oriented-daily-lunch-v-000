@@ -48,7 +48,7 @@ class Customer {
   }
   
   meals() {
-    return typeof store.meals
+    return 
   }
   
   totalSpent() {
