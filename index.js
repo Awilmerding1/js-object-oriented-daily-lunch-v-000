@@ -57,6 +57,7 @@ class Customer {
     return this.deliveries().reduce(function(agg, el, i, arr) {
     	return agg + el.price;
     })
+  }
 }
 
 
