@@ -50,7 +50,7 @@ class Customer {
   meals() {
     let a = []
       if (meal.deliveryId === this.deliveryId) {
-        return meal.title
+        a.push(meal.title)
     })
   }
   
