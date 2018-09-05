@@ -48,9 +48,13 @@ class Customer {
   }
   
   meals() {
-    return store.meals.map(function(meal) {
-      return meal.title
-    })
+    const a = []
+  	for (const meal of store.meals) {
+    	if (meal.deliveryId === this.deliveryId) {
+    	   a.push(meal.title)
+	    }
+	    return a
+  	}
   }
   
   totalSpent() {
