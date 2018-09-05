@@ -63,7 +63,7 @@ class Customer {
     }, 0)
   }
 }
-}
+
 
 let mealId = 0
 
