@@ -49,7 +49,7 @@ class Customer {
   
   meals() {
     return store.meals.forEach(function(el, i, arr){
-      return [...arr]
+      return el.title
     })
       
   }
