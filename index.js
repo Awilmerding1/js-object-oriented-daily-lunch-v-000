@@ -48,11 +48,8 @@ class Customer {
   }
   
   meals() {
-    return store.meals.map(meal => {
-      if (meal.deliveryId === this.deliveryId) {
-        return meal.title
-      }
-    })
+    return store.meals.forEach
+      
   }
   
   totalSpent() {
