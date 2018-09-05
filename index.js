@@ -64,65 +64,65 @@ class Customer {
   }
 }
 
-let mealId = 0
+// let mealId = 0
 
-class Meal {
+// class Meal {
   
-  constructor(title, price) {
-    this.title = title
-    this.price = price
-    this.id = ++mealId
-    store.meals.push(this)
-  }
+//   constructor(title, price) {
+//     this.title = title
+//     this.price = price
+//     this.id = ++mealId
+//     store.meals.push(this)
+//   }
   
-  deliveries() {
-    return store.deliveries.filter(delivery => {
-      return delivery.mealId === this.id
-    })
-  }
+//   deliveries() {
+//     return store.deliveries.filter(delivery => {
+//       return delivery.mealId === this.id
+//     })
+//   }
   
-  customers() {
-    let a = store.customers.filter(customer => {
-      return customer.mealId === this.id
-    })
-    return a.reduce(function(agg, el, i, arr) {
-      return [...agg, el.name]
-    }, [])
-  }
+//   customers() {
+//     let a = store.customers.filter(customer => {
+//       return customer.mealId === this.id
+//     })
+//     return a.reduce(function(agg, el, i, arr) {
+//       return [...agg, el.name]
+//     }, [])
+//   }
   
-  static byPrice() {
+//   static byPrice() {
     
-  }
-}
-
-// let deliveryId = 0
-
-// class Delivery {
-  
-//   constructor(mealId, neighborhoodId, customerId) {
-//     this.id = ++deliveryId
-//     this.mealId = mealId
-//     this.neighborhoodId = neighborhoodId
-//     this.customerId = customerId
-//     store.deliveries.push(this)
-//   }
-  
-//   meal() {
-//     return store.meals.find(meal => {
-//       return meal.id === this.mealId
-//     })
-//   }
-    
-//   customer() {
-//     return store.customers.find(customer => {
-//       return customer.id === this.customerId
-//     })
-//   }
-  
-//   neighborhood() {
-//     return store.neighborhoods.find(neighborhood => {
-//       return neighborhood.id === this.neighborhoodId
-//     })
 //   }
 // }
+
+let deliveryId = 0
+
+class Delivery {
+  
+  constructor(mealId, neighborhoodId, customerId) {
+    this.id = ++deliveryId
+    this.mealId = mealId
+    this.neighborhoodId = neighborhoodId
+    this.customerId = customerId
+    store.deliveries.push(this)
+  }
+  
+  meal() {
+    return store.meals.find(meal => {
+      return meal.id === this.mealId
+    })
+  }
+    
+  customer() {
+    return store.customers.find(customer => {
+      return customer.id === this.customerId
+    })
+  }
+  
+  neighborhood() {
+    return store.neighborhoods.find(neighborhood => {
+      return neighborhood.id === this.neighborhoodId
+    })
+  }
+}
 
