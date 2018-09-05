@@ -87,7 +87,7 @@ class Meal {
   }
   
   static byPrice() {
-    let prices = 
+    let prices = this.meals
     prices.sort(function(price1, price2){
       return price1 - price2
     })
